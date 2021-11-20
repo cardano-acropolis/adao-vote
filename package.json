@@ -1,0 +1,24 @@
+{
+  "name": "adao-vote",
+  "version": "1.0.0",
+  "description": "electron app for adao",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . adao-vote --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=\"Jones Financial\" --version-string.FileDescription=CE --version-string.ProductName=\"ADAO Vote\"",
+    "package-linux": "electron-packager . adao-vote --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
+    "rebuild-deps": "electron-builder install-app-deps"
+  },
+  "author": "Noah Jones",
+  "license": "MIT",
+  "dependencies": {
+    "cardano-sdk": "^0.1.1",
+    "trezor-connect": "^8.2.1"
+  },
+  "devDependencies": {
+    "electron": "^15.3.0",
+    "electron-builder": "^22.13.1",
+    "electron-packager": "^15.4.0"
+  }
+}
