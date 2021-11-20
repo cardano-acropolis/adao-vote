@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ADAO Vote</title>
+        <script src="./renderer.js"></script>
+        <script>
+            const electron = require('electron');
+            const url = require('url');
+            const path = require('path');
+            const TrezorConnect = require('trezor-connect').default;
+            const { app, BrowserWindow } = electron;
+            const { app, BrowserWindow } = TrezorConnect;
+            doStuff = function() {
+                document.getElementById("pubKeyOutput").innerHTML = "cui cui cui";
+            };
+        </script>
+    </head>
+    <body>
+        <h1>Vote</h1>
+        <button type="button" id="pubKey" onclick="doStuff()">test</button>
+        <button type="button" id="pubKey" onclick="trezorPubKey()">pubKey</button>
+        <div id="pubKeyOutput">ugh</div>
+    </body>
+</html>
