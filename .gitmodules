@@ -1,0 +1,9 @@
+[submodule "cardano-js-sdk"]
+	path = cardano-js-sdk
+	url = https://www.github.com/input-output-hk/cardano-js-sdk
+[submodule "js-chain-libs"]
+	path = js-chain-libs
+	url = https://www.github.com/input-output-hk/js-chain-libs
+[submodule "connect"]
+	path = connect
+	url = https://github.com/trezor/connect.git
